@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Furry Baby</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="furrybaby.css">
+<!--[if lt IE 9]>
+<script src="html5shiv.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div id="wrapper">
+    <header><a href="index.html"><img class="header" src="untitled.png" alt="Furry Baby"></a></header>
+<nav>
+  <ul>
+    <li><a href="apparel.html">APPAREL</a></li> &nbsp;&nbsp;&nbsp;
+    <li><a href="accessories.html">ACCESSORIES</a></li> &nbsp;&nbsp;&nbsp;
+    <li><a href="toys.html">TOYS</a></li> &nbsp;&nbsp;&nbsp;
+    <li><a href="contact.html">CONTACT</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="doginhoodie.jpg" alt="Looking good in the mirror">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="chihuahua.jpg" alt="Posing for the camera">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="dogandball.jpg" alt="Playing with toys">
+    </div>
+
+  </div>
+
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000);
+}
+</script><br>
+
+<center><h1>Welcome to Furry Baby</h1>
+Let us become your primary destination of finding the best styles for your furry babies!<br>
+We specialize in clothes, accessories, and even toys for your pets!<br>
+Located in the Hyde Park area of Tampa, FL<br>
+We hope you enjoy browsing our online catalog :)</center>
+
+</main>
+<br><br>
+<footer>
+  <small>Copyright &copy; 2017 Furry Baby</small>
+</footer>
+
+</div>
+</body>
+</html>
